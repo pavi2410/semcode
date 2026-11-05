@@ -1,0 +1,30 @@
+load models/onnx2/onnx/model.onnx: 0.54s, RSS 641 MB
+indexed 1134 chunks (162976 tokens, mean 144, max_len 512) in 208.7s = 5.4 chunks/s; RSS 2673 MB peak 2673 MB
+
+Q: where are redirects followed
+  [768d] tests/test_main.py::test_follow_redirects (0.794)  |  tests/client/test_redirects.py::redirects (0.794)  |  httpx/_models.py::Response.has_redirect_location (0.777)
+  [256d] tests/test_main.py::test_follow_redirects (0.804)  |  tests/client/test_redirects.py::redirects (0.801)  |  httpx/_models.py::Response.has_redirect_location (0.794)
+
+Q: parse proxy URL from environment
+  [768d] httpx/_utils.py::get_environment_proxies (0.764)  |  tests/client/test_proxies.py::test_proxies_environ (0.756)  |  httpx/_client.py::BaseClient._get_proxy_map (0.750)
+  [256d] tests/client/test_proxies.py::test_proxies_environ (0.784)  |  httpx/_utils.py::get_environment_proxies (0.774)  |  httpx/_config.py::Proxy.__init__ (0.769)
+
+Q: retry on connection failure
+  [768d] tests/test_timeouts.py::test_connect_timeout (0.720)  |  tests/client/test_client.py::test_client_closed_state_using_with_block (0.708)  |  tests/client/test_async_client.py::test_client_closed_state_using_with_block (0.707)
+  [256d] tests/test_timeouts.py::test_connect_timeout (0.750)  |  httpx/_types.py::SyncByteStream.close (0.749)  |  httpx/_decoders.py::LineDecoder.__init__ (0.743)
+
+Q: decode gzip/brotli content
+  [768d] httpx/_decoders.py::BrotliDecoder.decode (0.827)  |  tests/test_decoders.py::test_brotli (0.800)  |  httpx/_decoders.py::DeflateDecoder.decode (0.797)
+  [256d] httpx/_decoders.py::BrotliDecoder.decode (0.846)  |  tests/test_decoders.py::test_brotli (0.822)  |  httpx/_decoders.py::BrotliDecoder.__init__ (0.820)
+
+Q: build multipart form body
+  [768d] httpx/_multipart.py::_format_form_param (0.769)  |  httpx/_content.py::encode_urlencoded_data (0.769)  |  httpx/_content.py::encode_multipart_data (0.763)
+  [256d] httpx/_multipart.py::_format_form_param (0.788)  |  httpx/_content.py::encode_multipart_data (0.786)  |  httpx/_content.py::encode_urlencoded_data (0.783)
+
+Q: basic and digest authentication challenge
+  [768d] tests/client/test_auth.py::DigestApp.challenge_send (0.817)  |  tests/client/test_auth.py::test_digest_auth_reuses_challenge (0.810)  |  httpx/_auth.py::DigestAuth._parse_challenge (0.809)
+  [256d] tests/client/test_auth.py::DigestApp.challenge_send (0.843)  |  httpx/_auth.py::DigestAuth._parse_challenge (0.832)  |  tests/client/test_auth.py::test_digest_auth_reuses_challenge (0.828)
+
+Q: percent-encode URL path and query
+  [768d] tests/models/test_url.py::test_url_query_encoding (0.802)  |  httpx/_urlparse.py::PERCENT (0.801)  |  tests/models/test_url.py::test_param_with_percent_encoded (0.793)
+  [256d] tests/models/test_url.py::test_url_query_encoding (0.827)  |  httpx/_urlparse.py::PERCENT (0.817)  |  tests/models/test_url.py::test_param_with_percent_encoded (0.813)

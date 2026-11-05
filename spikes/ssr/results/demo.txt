@@ -1,0 +1,162 @@
+================ OPTION A: ast-grep-core 0.50 ================
+(found 5)
+--- rust unwrap->expect (all): 4 rewrites, parse-error-after=false, matches-on-second-pass=1
+  -     let a = foo().unwrap();
+  -     let b = a.get(0).unwrap().bar.unwrap(); // nested
+  -     let f = File::open("x").unwrap();
+  -     let s = x
+  -         .iter()
+  -         .map(|v| v + 1)
+  -         .collect::<Vec<_>>()
+  -         .first()
+  -         .unwrap();
+  +     let a = foo().expect("TODO");
+  +     let b = a.get(0).unwrap().bar.expect("TODO"); // nested
+  +     let f = File::open("x").expect("TODO");
+  +     let s = x
+  +         .iter()
+  +         .map(|v| v + 1)
+  +         .collect::<Vec<_>>()
+  +         .first().expect("TODO");
+(found 1)
+--- rust unwrap->? when type_of($X)=io::Result (semantic): 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -     let f = File::open("x").unwrap();
+  +     let f = File::open("x")?;
+(found 1)
+--- rust match &$E (multi-line $$$ARMS, comments): 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -     match kind {
+  +     match &kind {
+(found 4)
+--- py add timeout kwarg: 4 rewrites, parse-error-after=true, matches-on-second-pass=0
+  -     r = requests.get(url)
+  -     r2 = requests.get(url, params=params)  # comment
+  -     r3 = requests.get()
+  -     r4 = requests.get(
+  -         url,
+  -         headers={"a": "b"},  # keep me
+  -     )
+  +     r = requests.get(url, timeout=10)
+  +     r2 = requests.get(url, params=params, timeout=10)  # comment
+  +     r3 = requests.get(, timeout=10)
+  +     r4 = requests.get(url,
+  +     headers={"a": "b"},  # keep me, timeout=10)
+(found 1)
+--- py if-None -> conditional expr: 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -         if opts is None:
+  -             opts = {}
+  +         opts = {} if opts is None else opts
+(found 1)
+--- py conditional expr -> if-None (multi-line out): 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -     cfg = load_default() if cfg is None else cfg
+  +     if cfg is None:
+  +         cfg = load_default()
+(found 3)
+--- ts == -> ===: 3 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -   if (p == 1 && q === "a") return p != 2;
+  -   const r = (p + 1) == (q.length /* c */ * 2);
+  -   return r == null;
+  +   if (p === 1 && q === "a") return p != 2;
+  +   const r = (p + 1) === (q.length /* c */ * 2);
+  +   return r === null;
+(found 1)
+--- ts import add .js to relative: 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  - import { a, b as bee, type C } from './mod';
+  + import { a, b as bee, type C } from './mod.js';
+
+================ OPTION B: own engine ================
+(found 5, ctx#1, comments dropped=0, trivia-pass changed output=true)
+--- rust unwrap->expect (all): 5 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -     let a = foo().unwrap();
+  -     let b = a.get(0).unwrap().bar.unwrap(); // nested
+  -     let f = File::open("x").unwrap();
+  -     let s = x
+  -         .iter()
+  -         .map(|v| v + 1)
+  -         .collect::<Vec<_>>()
+  -         .first()
+  -         .unwrap();
+  +     let a = foo().expect("TODO");
+  +     let b = a.get(0).expect("TODO").bar.expect("TODO"); // nested
+  +     let f = File::open("x").expect("TODO");
+  +     let s = x
+  +         .iter()
+  +         .map(|v| v + 1)
+  +         .collect::<Vec<_>>()
+  +         .first()
+  +         .expect("TODO");
+(found 1, ctx#1, comments dropped=0, trivia-pass changed output=false)
+--- rust unwrap->? when type_of($X)=io::Result (semantic): 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -     let f = File::open("x").unwrap();
+  +     let f = File::open("x")?;
+(found 1, ctx#0, comments dropped=0, trivia-pass changed output=true)
+--- rust match &$E (multi-line $$$ARMS, comments): 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -     match kind {
+  +     match &kind {
+(found 4, ctx#0, comments dropped=0, trivia-pass changed output=true)
+--- py add timeout kwarg: 4 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -     r = requests.get(url)
+  -     r2 = requests.get(url, params=params)  # comment
+  -     r3 = requests.get()
+  -     r4 = requests.get(
+  -         url,
+  -         headers={"a": "b"},  # keep me
+  +     r = requests.get(url, timeout=10)
+  +     r2 = requests.get(url, params=params, timeout=10)  # comment
+  +     r3 = requests.get(timeout=10)
+  +     r4 = requests.get(
+  +         url,
+  +         headers={"a": "b"}, timeout=10  # keep me
+(found 2, ctx#0, comments dropped=1, trivia-pass changed output=false)
+--- py if-None -> conditional expr: 2 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -         if opts is None:
+  -             opts = {}
+  -         if headers is None:
+  -             # build default headers
+  -             headers = dict(
+  -                 accept="json",
+  -                 agent="semcode",
+  -             )
+  +         opts = {} if opts is None else opts
+  +         headers = dict(
+  +             accept="json",
+  +             agent="semcode",
+  +         ) if headers is None else headers
+(found 1, ctx#0, comments dropped=0, trivia-pass changed output=false)
+--- py conditional expr -> if-None (multi-line out): 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -     cfg = load_default() if cfg is None else cfg
+  +     if cfg is None:
+  +         cfg = load_default()
+(found 3, ctx#0, comments dropped=0, trivia-pass changed output=false)
+--- ts == -> ===: 3 rewrites, parse-error-after=false, matches-on-second-pass=0
+  -   if (p == 1 && q === "a") return p != 2;
+  -   const r = (p + 1) == (q.length /* c */ * 2);
+  -   return r == null;
+  +   if (p === 1 && q === "a") return p != 2;
+  +   const r = (p + 1) === (q.length /* c */ * 2);
+  +   return r === null;
+(found 1, ctx#0, comments dropped=0, trivia-pass changed output=false)
+--- ts import add .js to relative: 1 rewrites, parse-error-after=false, matches-on-second-pass=0
+  - import { a, b as bee, type C } from './mod';
+  + import { a, b as bee, type C } from './mod.js';
+
+================ BACKTRACKING / CONSTRAINT-STEERING ================
+pattern f($$$A, $B)            on f(1)             pred=None: ast-grep=1 own=1
+pattern [$$$X, $Y, $$$Z]       on [1, 2, 3]        pred=None: ast-grep=1 own=1
+pattern f($$$A, $B)            on f(1, "x", 2)     pred=None: ast-grep=0 own=1
+pattern [$$$X, $Y, $$$Z]       on [1, 2, 3]        pred=Some(("Y", "2")): ast-grep=0 own=1
+pattern f($$$A, 3)             on f(3, 1, 3)       pred=None: ast-grep=0 own=1
+pattern f($$$A, $B, $B)        on f(1, 2, 2)       pred=None: ast-grep=0 own=1
+pattern f($$$A, $B, $$$C)      on f(a, b, c)       pred=Some(("B", "b")): ast-grep=0 own=1
+pattern f($$$A, $B, $$$C)      on f(a, b, c)       pred=None: ast-grep=1 own=1
+
+================ PATTERN PARSE AMBIGUITY ================
+[rs] foo($A)      on "foo(1); let x = foo(2);": ast-grep=Ok(2) own=Ok(2)
+[rs] $A.unwrap()  on "x.unwrap();": ast-grep=Ok(1) own=Ok(1)
+[ts] { $$$B }     on "let o = { a: 1 }; if (x) { y(); }": ast-grep=Ok(1) own=Ok(1)
+[ts] $K: $V       on "const o = { a: 1 }": ast-grep=Ok(0) own=Ok(0)
+[py] $X = $Y      on "a = 1\nb: int = 2": ast-grep=Ok(1) own=Ok(1)
+[py] print($A)    on "print(1)": ast-grep=Ok(1) own=Ok(1)
+ast-grep contextual('const o = { $K: $V }', selector=pair) on 'const o = { a: 1 }': 1
+ast-grep strictness "Smart": `$A == $B` matches 1 of [a == b; c === d; e != f]
+ast-grep strictness "Signature": `$A == $B` matches 3 of [a == b; c === d; e != f]
+ast-grep strictness "Template": `$A == $B` matches 1 of [a == b; c === d; e != f]

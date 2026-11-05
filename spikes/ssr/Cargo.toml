@@ -1,0 +1,16 @@
+[package]
+name = "ssr_spike"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ast-grep-core = "0.50.0"
+ast-grep-language = { version = "0.50.0", default-features = false, features = ["tree-sitter-rust", "tree-sitter-python", "tree-sitter-typescript"] }
+bit-set = "0.11.1"
+regex = "1.13.1"
+streaming-iterator = "0.1.9"
+tree-sitter = "=0.27.1"
+tree-sitter-python = "=0.25.0"
+tree-sitter-rust = "=0.24.2"
+tree-sitter-typescript = "=0.23.2"
+walkdir = "2.5.0"

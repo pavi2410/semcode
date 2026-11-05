@@ -1,0 +1,59 @@
+{
+  "load": {
+    "ms": 797,
+    "project": "/tmp/zodspike/packages/zod/tsconfig.json",
+    "files": 595
+  },
+  "typeAt_o": {
+    "ms": 23.1,
+    "type": "ZodObject<{ a: ZodString; b: ZodNumber; }, $strip>"
+  },
+  "nonascii": {
+    "u16": 259,
+    "u8": 271,
+    "symAtU16": "safeParse",
+    "symAtU8": "ключ"
+  },
+  "getSourceFile_ms": 21.9,
+  "nodeKind": 79,
+  "refs": {
+    "ms": 3901,
+    "entries": 7,
+    "total": 1048,
+    "files": 79,
+    "sampleHandle": {
+      "path": "/tmp/zodspike/packages/zod/src/v4/classic/schemas.ts",
+      "kind": 79,
+      "index": 491
+    }
+  },
+  "resolve50_ms": 22,
+  "sampleResolved": [
+    {
+      "pos": 3436,
+      "end": 3448,
+      "file": "/tmp/zodspike/packages/zod/src/v4/classic/schemas.ts"
+    },
+    {
+      "pos": 10649,
+      "end": 10658,
+      "file": "/tmp/zodspike/packages/zod/src/v4/classic/schemas.ts"
+    }
+  ],
+  "afterChange": {
+    "ms": 2470,
+    "total": 1049
+  },
+  "timing": {
+    "requestCount": 19,
+    "roundTripMs": 7211.590279000002,
+    "bytesSent": 2249,
+    "bytesReceived": 1584789,
+    "serverTimeMs": 7149.689261,
+    "transportOverheadMs": 61.901018000001386,
+    "nodesMaterialized": 851,
+    "sourceFilesFetched": 9,
+    "nodesFetched": 36765
+  },
+  "goChildPeakMB": 430
+}

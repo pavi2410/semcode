@@ -1,0 +1,12 @@
+A unwrap->expect       rewrites=1020  files=46   files-with-new-parse-errors=0   matches-left-after-1-pass=27   comments-lost=0
+B unwrap->expect       rewrites=1047  files=46   files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0 (self-reported 0)
+A match &$E            rewrites=343   files=62   files-with-new-parse-errors=0   matches-left-after-1-pass=10   comments-lost=0
+B match &$E            rewrites=353   files=62   files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0 (self-reported 0)
+A httpx.get +timeout   rewrites=5     files=3    files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0
+B httpx.get +timeout   rewrites=5     files=3    files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0 (self-reported 0)
+A if-None->cond        rewrites=4     files=2    files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0
+B if-None->cond        rewrites=4     files=2    files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0 (self-reported 0)
+A == -> ===            rewrites=3     files=3    files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0
+B == -> ===            rewrites=3     files=3    files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0 (self-reported 0)
+A import +.js          rewrites=0     files=0    files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0
+B import +.js          rewrites=0     files=0    files-with-new-parse-errors=0   matches-left-after-1-pass=0    comments-lost=0 (self-reported 0)

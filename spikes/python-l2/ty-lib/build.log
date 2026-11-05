@@ -1,0 +1,287 @@
+    Blocking waiting for file lock on package cache
+    Updating crates.io index
+    Updating git repository `https://github.com/astral-sh/ruff`
+    Blocking waiting for file lock on package cache
+     Locking 249 packages to latest Rust 1.98.0 compatible versions
+    Blocking waiting for file lock on package cache
+ Downloading crates ...
+  Downloaded attribute-derive-macro v0.11.0
+  Downloaded get-size-derive2 v0.11.1
+  Downloaded dirs-sys v0.5.0
+  Downloaded funty v2.0.0
+  Downloaded manyhow-macros v0.14.1
+  Downloaded quote-use v0.9.0
+  Downloaded collection_literals v1.0.3
+  Downloaded quote-use-macros v0.9.0
+  Downloaded radium v0.7.0
+  Downloaded pathdiff v0.2.3
+  Downloaded path-slash v0.2.1
+  Downloaded tap v1.0.1
+  Downloaded is-macro v0.3.8
+  Downloaded anstyle v1.0.14
+  Downloaded crossbeam v0.8.5
+  Downloaded unscanny v0.1.0
+  Downloaded dirs v6.0.0
+  Downloaded attribute-derive v0.11.0
+  Downloaded psm v0.1.32
+  Downloaded wyz v0.5.1
+  Downloaded filetime v0.2.29
+  Downloaded supports-hyperlinks v3.2.0
+  Downloaded glob v0.3.4
+  Downloaded etcetera v0.11.0
+  Downloaded manyhow v0.14.1
+  Downloaded interpolator v0.5.0
+  Downloaded proc-macro-utils v0.10.0
+  Downloaded which v8.0.6
+  Downloaded version-ranges v0.1.3
+  Downloaded get-size2 v0.11.1
+  Downloaded zstd-safe v7.3.0
+  Downloaded zstd v0.13.3
+  Downloaded colored v3.1.1
+  Downloaded seahash v4.1.0
+  Downloaded chacha20 v0.10.2
+  Downloaded pep440_rs v0.7.3
+  Downloaded matchit v0.9.2
+  Downloaded shellexpand v3.1.2
+  Downloaded ordermap v1.2.2
+  Downloaded ar_archive_writer v0.5.3
+  Downloaded char_str v0.0.4
+  Downloaded rand v0.10.3
+  Downloaded compact_str v0.10.0
+  Downloaded similar v3.2.0
+  Downloaded unicode-normalization v0.1.25
+  Downloaded bitvec v1.1.1
+  Downloaded object v0.39.1
+  Downloaded zstd-sys v2.1.1+zstd.1.5.7
+    Blocking waiting for file lock on package cache
+   Compiling libc v0.2.190
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.229
+   Compiling cfg-if v1.0.5
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.14
+   Compiling smallvec v1.16.3
+   Compiling serde v1.0.229
+   Compiling foldhash v0.2.0
+   Compiling rustversion v1.0.23
+   Compiling equivalent v1.0.3
+   Compiling allocator-api2 v0.2.21
+   Compiling zmij v1.0.23
+   Compiling parking_lot_core v0.9.12
+   Compiling memchr v2.8.3
+   Compiling scopeguard v1.2.0
+   Compiling lock_api v0.4.14
+   Compiling syn v3.0.9
+   Compiling proc-macro-utils v0.10.0
+   Compiling hashbrown v0.17.1
+   Compiling collection_literals v1.0.3
+   Compiling interpolator v0.5.0
+   Compiling itoa v1.0.18
+   Compiling crossbeam-utils v0.8.23
+   Compiling jobserver v0.1.35
+   Compiling castaway v0.2.4
+   Compiling static_assertions v1.1.0
+   Compiling parking_lot v0.12.5
+   Compiling syn v2.0.119
+   Compiling cc v1.8.0
+   Compiling manyhow-macros v0.14.1
+   Compiling indexmap v2.14.2
+   Compiling pkg-config v0.3.34
+   Compiling heck v0.5.0
+   Compiling zerocopy v0.8.63
+   Compiling getrandom v0.2.17
+   Compiling once_cell v1.21.4
+   Compiling aho-corasick v1.1.5
+   Compiling rand_core v0.6.4
+   Compiling ordermap v1.2.2
+   Compiling log v0.4.34
+   Compiling regex-syntax v0.8.11
+   Compiling object v0.39.1
+   Compiling bitflags v2.13.2
+   Compiling portable-atomic v1.15.0
+   Compiling siphasher v1.0.4
+   Compiling typeid v1.0.3
+   Compiling either v1.19.0
+   Compiling zstd-safe v7.3.0
+   Compiling ppv-lite86 v0.2.21
+   Compiling phf_shared v0.11.3
+   Compiling tracing-core v0.1.36
+   Compiling bstr v1.13.1
+   Compiling rand_chacha v0.3.1
+   Compiling zstd-sys v2.1.1+zstd.1.5.7
+   Compiling manyhow v0.14.1
+   Compiling regex-automata v0.4.18
+   Compiling synstructure v0.14.0
+   Compiling rand v0.8.8
+   Compiling crossbeam-queue v0.3.14
+   Compiling rustc-hash v2.1.3
+   Compiling pin-project-lite v0.2.17
+   Compiling thiserror v2.0.21
+   Compiling phf_generator v0.11.3
+   Compiling itertools v0.15.0
+   Compiling tracing-attributes v0.1.31
+   Compiling serde_derive v1.0.229
+   Compiling quote-use-macros v0.9.0
+   Compiling quote-use v0.9.0
+   Compiling attribute-derive-macro v0.11.0
+   Compiling globset v0.4.20
+   Compiling tracing v0.1.44
+   Compiling salsa-macros v0.28.5
+   Compiling thiserror-impl v2.0.21
+   Compiling attribute-derive v0.11.0
+   Compiling is-macro v0.3.8
+   Compiling get-size-derive2 v0.11.1
+   Compiling hashlink v0.12.2
+   Compiling inventory v0.3.25
+   Compiling salsa-macro-rules v0.28.5
+   Compiling tinyvec v1.13.3
+   Compiling ryu v1.0.23
+   Compiling crc32fast v1.5.2
+   Compiling intrusive-collections v0.10.3
+   Compiling boxcar v0.2.14
+   Compiling ar_archive_writer v0.5.3
+   Compiling regex v1.13.1
+   Compiling unicode-normalization v0.1.25
+   Compiling zerofrom-derive v0.1.8
+   Compiling phf_codegen v0.11.3
+   Compiling filetime v0.2.29
+   Compiling glob v0.3.4
+   Compiling thin-vec v0.2.21
+   Compiling compact_str v0.10.0
+   Compiling seahash v4.1.0
+   Compiling crossbeam-epoch v0.9.21
+   Compiling psm v0.1.32
+   Compiling ruff_unicode_names2_generator v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling yoke-derive v0.8.4
+   Compiling get-size2 v0.11.1
+   Compiling salsa v0.28.5
+   Compiling zerofrom v0.1.8
+   Compiling stable_deref_trait v1.2.1
+   Compiling crossbeam-deque v0.8.8
+   Compiling ruff_text_size v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling char_str v0.0.4
+   Compiling arrayvec v0.7.8
+   Compiling ruff_source_file v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ruff_unicode_names2 v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ruff_python_trivia v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling yoke v0.8.3
+   Compiling stacker v0.1.25
+   Compiling ruff_cache v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ruff_python_ast v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling phf v0.11.3
+   Compiling zerovec-derive v0.11.6
+   Compiling anyhow v1.0.104
+   Compiling zerovec v0.11.8
+   Compiling displaydoc v0.2.7
+   Compiling serde_json v1.0.154
+   Compiling rand_core v0.10.1
+   Compiling drop_bomb v0.1.5
+   Compiling same-file v1.0.6
+   Compiling cpufeatures v0.3.1
+   Compiling chacha20 v0.10.2
+   Compiling walkdir v2.5.0
+   Compiling ruff_macros v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ruff_diagnostics v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling unicode-width v0.2.2
+   Compiling camino v1.2.6
+   Compiling rand v0.10.3
+   Compiling anstyle v1.0.14
+   Compiling uuid v1.28.0
+   Compiling hashbrown v0.14.5
+   Compiling typed-path v0.12.3
+   Compiling ruff_python_parser v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling dashmap v6.2.1
+   Compiling ruff_notebook v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ruff_annotate_snippets v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty_static v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ignore v0.4.33
+   Compiling tinystr v0.8.4
+   Compiling ruff_memory_usage v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling arc-swap v1.9.2
+   Compiling which v8.0.6
+   Compiling etcetera v0.11.0
+   Compiling similar v3.2.0
+   Compiling writeable v0.6.4
+   Compiling supports-hyperlinks v3.2.0
+   Compiling dunce v1.0.5
+   Compiling matchit v0.9.2
+   Compiling litemap v0.8.3
+   Compiling path-slash v0.2.1
+   Compiling pathdiff v0.2.3
+   Compiling icu_locale_core v2.3.0
+   Compiling zerotrie v0.2.5
+   Compiling potential_utf v0.1.6
+   Compiling utf8_iter v1.0.4
+   Compiling icu_normalizer_data v2.3.0
+   Compiling icu_properties_data v2.3.0
+   Compiling icu_collections v2.3.0
+   Compiling icu_provider v2.3.1
+   Compiling zstd v0.13.3
+   Compiling winnow v1.0.4
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling strum_macros v0.28.0
+   Compiling serde_spanned v1.1.2
+   Compiling toml_datetime v1.1.2+spec-1.1.0
+   Compiling radium v0.7.0
+   Compiling zip v8.6.0
+   Compiling toml_writer v1.1.3+spec-1.1.0
+   Compiling icu_properties v2.3.0
+   Compiling toml v1.1.8+spec-1.1.0
+   Compiling icu_normalizer v2.3.0
+   Compiling ty_vendored v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling rayon-core v1.13.0
+   Compiling inotify-sys v0.1.8
+   Compiling tap v1.0.1
+   Compiling wyz v0.5.1
+   Compiling ruff_python_literal v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling strum v0.28.0
+   Compiling ruff_python_stdlib v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling colored v3.1.1
+   Compiling funty v2.0.0
+   Compiling option-ext v0.2.0
+   Compiling dirs-sys v0.5.0
+   Compiling bitvec v1.1.1
+   Compiling ruff_python_codegen v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ruff_index v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling inotify v0.11.5
+   Compiling ruff_python_importer v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling rayon v1.12.0
+   Compiling dirs v6.0.0
+   Compiling ruff_python_edits v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling notify-types v2.1.0
+   Compiling mio v1.2.4
+   Compiling crossbeam-channel v0.5.17
+   Compiling version-ranges v0.1.3
+   Compiling unscanny v0.1.0
+   Compiling shellexpand v3.1.2
+   Compiling pep440_rs v0.7.3
+   Compiling notify v8.2.0
+   Compiling ruff_options_metadata v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling crossbeam v0.8.5
+   Compiling ruff_db v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ruff_ranged_value v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty_site_packages v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty_module_resolver v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty_combine v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty_python_core v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty_python_semantic v0.0.17 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty_project v0.0.0 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty_ide v0.0.0 (https://github.com/astral-sh/ruff?rev=1ae6552a9432d759218db172c22a007eddfcb40b#1ae6552a)
+   Compiling ty-lib-spike v0.1.0 (/home/pavitra/Playground/semcode/spikes/python-l2/ty-lib)
+warning: unused import: `Db`
+  --> src/main.rs:15:18
+   |
+15 | use ty_project::{Db, ProjectDatabase, ProjectMetadata};
+   |                  ^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `ty-lib-spike` (bin "ty-lib-spike") generated 1 warning (run `cargo fix --bin "ty-lib-spike" -p ty-lib-spike` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 10m 54s
+
+real	10m54.617s
+user	15m49.580s
+sys	0m34.433s
+EXIT 0

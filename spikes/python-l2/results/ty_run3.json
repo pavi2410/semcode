@@ -1,0 +1,283 @@
+{
+  "server": "ty",
+  "cmd": [
+    "ty",
+    "server"
+  ],
+  "server_info": {
+    "name": "ty",
+    "version": "0.0.87"
+  },
+  "t_initialize_s": 0.013,
+  "position_encoding_negotiated": "utf-8",
+  "capabilities": {
+    "callHierarchyProvider": true,
+    "codeActionProvider": {
+      "codeActionKinds": [
+        "quickfix"
+      ]
+    },
+    "completionProvider": {
+      "triggerCharacters": [
+        ".",
+        "\"",
+        "'"
+      ]
+    },
+    "declarationProvider": true,
+    "definitionProvider": true,
+    "diagnosticProvider": {
+      "identifier": "ty",
+      "interFileDependencies": true,
+      "workDoneProgress": true,
+      "workspaceDiagnostics": true
+    },
+    "documentHighlightProvider": true,
+    "documentSymbolProvider": true,
+    "executeCommandProvider": {
+      "commands": [
+        "ty.printDebugInformation"
+      ],
+      "workDoneProgress": false
+    },
+    "foldingRangeProvider": true,
+    "hoverProvider": true,
+    "implementationProvider": true,
+    "inlayHintProvider": {},
+    "notebookDocumentSync": {
+      "notebookSelector": [
+        {
+          "cells": [
+            {
+              "language": "python"
+            }
+          ]
+        }
+      ],
+      "save": false
+    },
+    "positionEncoding": "utf-8",
+    "referencesProvider": true,
+    "renameProvider": {
+      "prepareProvider": true
+    },
+    "selectionRangeProvider": true,
+    "semanticTokensProvider": {
+      "full": true,
+      "legend": {
+        "tokenModifiers": [
+          "definition",
+          "readonly",
+          "async",
+          "documentation"
+        ],
+        "tokenTypes": [
+          "namespace",
+          "class",
+          "parameter",
+          "selfParameter",
+          "clsParameter",
+          "variable",
+          "property",
+          "function",
+          "method",
+          "keyword",
+          "string",
+          "number",
+          "decorator",
+          "builtinConstant",
+          "typeParameter",
+          "operator",
+          "regexp"
+        ]
+      },
+      "range": true
+    },
+    "signatureHelpProvider": {
+      "retriggerCharacters": [
+        ")"
+      ],
+      "triggerCharacters": [
+        "(",
+        ","
+      ]
+    },
+    "textDocumentSync": {
+      "change": 2,
+      "openClose": true,
+      "save": {
+        "includeText": false
+      }
+    },
+    "typeDefinitionProvider": true,
+    "typeHierarchyProvider": true,
+    "workspace": {
+      "workspaceFolders": {
+        "changeNotifications": true,
+        "supported": true
+      }
+    },
+    "workspaceSymbolProvider": true
+  },
+  "feature_support": {
+    "definitionProvider": true,
+    "referencesProvider": true,
+    "renameProvider": true,
+    "hoverProvider": true,
+    "callHierarchyProvider": true,
+    "typeHierarchyProvider": true,
+    "implementationProvider": true,
+    "workspaceSymbolProvider": true,
+    "documentSymbolProvider": true,
+    "semanticTokensProvider": true,
+    "inlayHintProvider": false,
+    "codeActionProvider": true,
+    "typeDefinitionProvider": true,
+    "declarationProvider": true
+  },
+  "refs_cold_s": 0.329,
+  "t_first_refs_since_spawn_s": 0.344,
+  "refs_from_decl": [
+    "fixture_semcode.py:13",
+    "fixture_semcode.py:17",
+    "fixture_semcode.py:21",
+    "fixture_semcode.py:31",
+    "fixture_semcode.py:8",
+    "httpx/_client.py:825",
+    "httpx/_client.py:868",
+    "tests/client/test_client.py:54",
+    "tests/client/test_client.py:69",
+    "tests/client/test_redirects.py:143",
+    "tests/client/test_redirects.py:148"
+  ],
+  "refs_from_decl_error": null,
+  "refs_from_decl_score": {
+    "found": 11,
+    "true_pos": 11,
+    "recall": "11/11",
+    "missed": [],
+    "extra": []
+  },
+  "refs_warm_s": 0.002,
+  "refs_warm_score": {
+    "found": 11,
+    "true_pos": 11,
+    "recall": "11/11",
+    "missed": [],
+    "extra": []
+  },
+  "refs_from_alias_site": {
+    "found": 11,
+    "true_pos": 11,
+    "recall": "11/11",
+    "missed": [],
+    "extra": []
+  },
+  "refs_from_alias_site_s": 0.005,
+  "encoding_check": {
+    "expected_char_in_utf-8": 33,
+    "expected_utf16": 30,
+    "expected_utf8": 33,
+    "server_returned": [
+      33
+    ]
+  },
+  "hover": {
+    "client_in_with": {
+      "s": 0.002,
+      "text": "Client",
+      "error": null
+    },
+    "r_result_of_send": {
+      "s": 0.001,
+      "text": "Response",
+      "error": null
+    },
+    "c_alias_instance": {
+      "s": 0.001,
+      "text": "Client",
+      "error": null
+    },
+    "self_send_in_lib": {
+      "s": 0.002,
+      "text": "bound method Self@request.send(\n    request: Request,\n    *,\n    stream: bool = False,\n    auth: tuple[str | bytes, str | bytes] | ((Request, /) -> Request) | Auth | UseClientDefault | None = ...,\n    follow_redirects: bool | UseClientDefault = ...\n) -> Response\n-------------------------------------",
+      "error": null
+    }
+  },
+  "call_hierarchy_prepare": {
+    "s": 0.004,
+    "error": null,
+    "items": [
+      "send"
+    ]
+  },
+  "call_hierarchy_incoming": {
+    "s": 0.025,
+    "error": null,
+    "callers": [
+      "fixture_semcode.py:send",
+      "fixture_semcode.py:via_alias",
+      "fixture_semcode.py:via_from_alias",
+      "fixture_semcode.py:via_param",
+      "fixture_semcode.py:via_with",
+      "httpx/_client.py:request",
+      "httpx/_client.py:stream",
+      "tests/client/test_client.py:test_build_post_request",
+      "tests/client/test_client.py:test_build_request",
+      "tests/client/test_redirects.py:test_next_request"
+    ]
+  },
+  "rename_base": {
+    "s": 0.003,
+    "prepare_ok": true,
+    "prepare_error": null,
+    "error": null,
+    "edited_locations": [
+      "fixture_semcode.py:13",
+      "fixture_semcode.py:17",
+      "fixture_semcode.py:21",
+      "fixture_semcode.py:31",
+      "httpx/_client.py:825",
+      "httpx/_client.py:868",
+      "httpx/_client.py:879",
+      "tests/client/test_client.py:54",
+      "tests/client/test_client.py:69",
+      "tests/client/test_redirects.py:143",
+      "tests/client/test_redirects.py:148"
+    ],
+    "n_edits": 11,
+    "copy": "/tmp/ty-rename-base",
+    "touches_override": false,
+    "touches_base_decl": true,
+    "touches_async_client": false
+  },
+  "rename_override": {
+    "s": 0.003,
+    "prepare_ok": true,
+    "prepare_error": null,
+    "error": null,
+    "edited_locations": [
+      "fixture_semcode.py:26",
+      "fixture_semcode.py:7"
+    ],
+    "n_edits": 2,
+    "copy": "/tmp/ty-rename-override",
+    "touches_override": true,
+    "touches_base_decl": false,
+    "touches_async_client": false
+  },
+  "incr_didChange": {
+    "s": 0.023,
+    "sees_new_call": true,
+    "n": 12
+  },
+  "incr_ondisk_new_file": {
+    "s": 0.032,
+    "sees_new_call": true
+  },
+  "peak_rss_mb_tree": 83.7,
+  "server_to_client_requests": [
+    "workspace/configuration",
+    "client/registerCapability:workspace/didChangeWatchedFiles"
+  ]
+}

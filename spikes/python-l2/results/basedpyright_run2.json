@@ -1,0 +1,323 @@
+{
+  "server": "basedpyright",
+  "cmd": [
+    "node",
+    "/home/pavitra/Playground/semcode/spikes/python-l2/node/node_modules/basedpyright/langserver.index.js",
+    "--stdio"
+  ],
+  "server_info": {
+    "name": "basedpyright",
+    "version": "1.40.2"
+  },
+  "t_initialize_s": 0.323,
+  "position_encoding_negotiated": "utf-16",
+  "capabilities": {
+    "textDocumentSync": {
+      "willSave": true,
+      "change": 2,
+      "openClose": true
+    },
+    "notebookDocumentSync": {
+      "notebookSelector": [
+        {
+          "notebook": {
+            "scheme": "file",
+            "notebookType": "jupyter-notebook"
+          },
+          "cells": [
+            {
+              "language": "python"
+            }
+          ]
+        }
+      ],
+      "save": true
+    },
+    "definitionProvider": {
+      "workDoneProgress": true
+    },
+    "declarationProvider": {
+      "workDoneProgress": true
+    },
+    "typeDefinitionProvider": {
+      "workDoneProgress": true
+    },
+    "referencesProvider": {
+      "workDoneProgress": true
+    },
+    "implementationProvider": {
+      "workDoneProgress": true
+    },
+    "documentSymbolProvider": {
+      "workDoneProgress": true
+    },
+    "workspaceSymbolProvider": {
+      "workDoneProgress": true
+    },
+    "hoverProvider": {
+      "workDoneProgress": true
+    },
+    "documentHighlightProvider": {
+      "workDoneProgress": true
+    },
+    "renameProvider": {
+      "prepareProvider": true,
+      "workDoneProgress": true
+    },
+    "completionProvider": {
+      "triggerCharacters": [
+        ".",
+        "[",
+        "\"",
+        "'"
+      ],
+      "resolveProvider": true,
+      "workDoneProgress": true,
+      "completionItem": {
+        "labelDetailsSupport": true
+      }
+    },
+    "signatureHelpProvider": {
+      "triggerCharacters": [
+        "(",
+        ",",
+        ")"
+      ],
+      "workDoneProgress": true
+    },
+    "codeActionProvider": {
+      "codeActionKinds": [
+        "quickfix",
+        "source.organizeImports"
+      ],
+      "workDoneProgress": true
+    },
+    "executeCommandProvider": {
+      "commands": [
+        "basedpyright.createtypestub",
+        "basedpyright.restartserver",
+        "basedpyright.writeBaseline"
+      ],
+      "workDoneProgress": true
+    },
+    "callHierarchyProvider": true,
+    "inlayHintProvider": true,
+    "semanticTokensProvider": {
+      "legend": {
+        "tokenTypes": [
+          "namespace",
+          "type",
+          "class",
+          "enum",
+          "typeParameter",
+          "parameter",
+          "variable",
+          "property",
+          "enumMember",
+          "function",
+          "method",
+          "keyword",
+          "decorator",
+          "selfParameter",
+          "clsParameter"
+        ],
+        "tokenModifiers": [
+          "declaration",
+          "definition",
+          "readonly",
+          "static",
+          "async",
+          "defaultLibrary",
+          "builtin",
+          "classMember",
+          "parameter"
+        ]
+      },
+      "full": true
+    },
+    "workspace": {
+      "fileOperations": {
+        "willRename": {
+          "filters": [
+            {
+              "pattern": {
+                "glob": "**/*"
+              }
+            }
+          ]
+        }
+      },
+      "workspaceFolders": {
+        "supported": true,
+        "changeNotifications": true
+      }
+    },
+    "documentOnTypeFormattingProvider": {
+      "firstTriggerCharacter": "{"
+    }
+  },
+  "feature_support": {
+    "definitionProvider": true,
+    "referencesProvider": true,
+    "renameProvider": true,
+    "hoverProvider": true,
+    "callHierarchyProvider": true,
+    "typeHierarchyProvider": false,
+    "implementationProvider": true,
+    "workspaceSymbolProvider": true,
+    "documentSymbolProvider": true,
+    "semanticTokensProvider": true,
+    "inlayHintProvider": true,
+    "codeActionProvider": true,
+    "typeDefinitionProvider": true,
+    "declarationProvider": true
+  },
+  "refs_cold_s": 2.521,
+  "t_first_refs_since_spawn_s": 2.846,
+  "refs_from_decl": [
+    "fixture_semcode.py:13",
+    "fixture_semcode.py:17",
+    "fixture_semcode.py:21",
+    "fixture_semcode.py:31",
+    "fixture_semcode.py:8",
+    "httpx/_client.py:825",
+    "httpx/_client.py:868"
+  ],
+  "refs_from_decl_error": null,
+  "refs_from_decl_score": {
+    "found": 7,
+    "true_pos": 7,
+    "recall": "7/11",
+    "missed": [
+      "tests/client/test_client.py:54",
+      "tests/client/test_client.py:69",
+      "tests/client/test_redirects.py:143",
+      "tests/client/test_redirects.py:148"
+    ],
+    "extra": []
+  },
+  "refs_warm_s": 0.383,
+  "refs_warm_score": {
+    "found": 11,
+    "true_pos": 11,
+    "recall": "11/11",
+    "missed": [],
+    "extra": []
+  },
+  "refs_from_alias_site": {
+    "found": 11,
+    "true_pos": 11,
+    "recall": "11/11",
+    "missed": [],
+    "extra": []
+  },
+  "refs_from_alias_site_s": 0.03,
+  "encoding_check": {
+    "expected_char_in_utf-16": 30,
+    "expected_utf16": 30,
+    "expected_utf8": 33,
+    "server_returned": [
+      30
+    ]
+  },
+  "hover": {
+    "client_in_with": {
+      "s": 0.005,
+      "text": "(variable) client: Client",
+      "error": null
+    },
+    "r_result_of_send": {
+      "s": 0.001,
+      "text": "(variable) r: Response",
+      "error": null
+    },
+    "c_alias_instance": {
+      "s": 0.001,
+      "text": "(variable) c: Client",
+      "error": null
+    },
+    "self_send_in_lib": {
+      "s": 0.003,
+      "text": "(method) def send(\n    request: Request,\n    *,\n    stream: bool = False,\n    auth: AuthTypes | UseClientDefault | None = USE_CLIENT_DEFAULT,\n    follow_redirects: bool | UseClientDefault = USE_CLIENT_DEFAULT\n) -> Response\n\nSend a request.\n\nThe request is sent as-is, unmodified.\n\nTypically you'll wa",
+      "error": null
+    }
+  },
+  "call_hierarchy_prepare": {
+    "s": 0.001,
+    "error": null,
+    "items": [
+      "send"
+    ]
+  },
+  "call_hierarchy_incoming": {
+    "s": 0.448,
+    "error": null,
+    "callers": [
+      "fixture_semcode.py:send",
+      "fixture_semcode.py:via_alias",
+      "fixture_semcode.py:via_from_alias",
+      "fixture_semcode.py:via_param",
+      "fixture_semcode.py:via_with",
+      "httpx/_client.py:request",
+      "httpx/_client.py:stream",
+      "tests/client/test_client.py:test_build_post_request",
+      "tests/client/test_client.py:test_build_request",
+      "tests/client/test_redirects.py:test_next_request"
+    ]
+  },
+  "rename_base": {
+    "s": 0.014,
+    "prepare_ok": true,
+    "prepare_error": null,
+    "error": null,
+    "edited_locations": [
+      "fixture_semcode.py:13",
+      "fixture_semcode.py:17",
+      "fixture_semcode.py:21",
+      "fixture_semcode.py:31",
+      "fixture_semcode.py:8",
+      "httpx/_client.py:825",
+      "httpx/_client.py:868",
+      "httpx/_client.py:879",
+      "tests/client/test_client.py:54",
+      "tests/client/test_client.py:69",
+      "tests/client/test_redirects.py:143",
+      "tests/client/test_redirects.py:148"
+    ],
+    "n_edits": 12,
+    "copy": "/tmp/basedpyright-rename-base",
+    "touches_override": false,
+    "touches_base_decl": true,
+    "touches_async_client": false
+  },
+  "rename_override": {
+    "s": 0.02,
+    "prepare_ok": true,
+    "prepare_error": null,
+    "error": null,
+    "edited_locations": [
+      "fixture_semcode.py:26",
+      "fixture_semcode.py:7"
+    ],
+    "n_edits": 2,
+    "copy": "/tmp/basedpyright-rename-override",
+    "touches_override": true,
+    "touches_base_decl": false,
+    "touches_async_client": false
+  },
+  "incr_didChange": {
+    "s": 0.218,
+    "sees_new_call": true,
+    "n": 12
+  },
+  "incr_ondisk_new_file": {
+    "s": 0.974,
+    "sees_new_call": true
+  },
+  "peak_rss_mb_tree": 345.5,
+  "server_to_client_requests": [
+    "workspace/configuration",
+    "workspace/configuration",
+    "client/registerCapability:workspace/didChangeWatchedFiles"
+  ]
+}

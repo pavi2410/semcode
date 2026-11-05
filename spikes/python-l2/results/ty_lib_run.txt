@@ -1,0 +1,27 @@
+db_construct_ms=8
+full_check_ms=1143 diagnostics=72 rss_hwm_mb=95
+refs_cold_ms=17 n=11
+  ref fixture_semcode.py:13
+  ref fixture_semcode.py:17
+  ref fixture_semcode.py:21
+  ref fixture_semcode.py:31
+  ref fixture_semcode.py:8
+  ref httpx/_client.py:825
+  ref httpx/_client.py:868
+  ref tests/client/test_client.py:54
+  ref tests/client/test_client.py:69
+  ref tests/client/test_redirects.py:143
+  ref tests/client/test_redirects.py:148
+refs_warm_ms=13 n=11
+refs_from_alias_site n=12
+rename_base_ms=14 n_edits=11 ["fixture_semcode.py:13", "fixture_semcode.py:17", "fixture_semcode.py:21", "fixture_semcode.py:31", "httpx/_client.py:825", "httpx/_client.py:868", "httpx/_client.py:879", "tests/client/test_client.py:54", "tests/client/test_client.py:69", "tests/client/test_redirects.py:143", "tests/client/test_redirects.py:148"]
+rename_override_ms=4 n_edits=2 ["fixture_semcode.py:26", "fixture_semcode.py:7"]
+hover[with httpx.Client() as client] = Client
+hover[r = client.send] = Response
+hover[c = h.Client()] = Client
+incoming_calls_ms=58 n=10 ["fixture_semcode.py:11:via_alias", "fixture_semcode.py:16:via_from_alias", "fixture_semcode.py:20:via_param", "fixture_semcode.py:29:via_with", "fixture_semcode.py:7:send", "httpx/_client.py:771:request", "httpx/_client.py:828:stream", "tests/client/test_client.py:47:test_build_request", "tests/client/test_client.py:62:test_build_post_request", "tests/client/test_redirects.py:140:test_next_request"]
+apply_changes_ms=1
+refs_after_edit_ms=69 n=13
+  sees_new_file=true sees_edit=true
+rss_hwm_mb=97 total_ms=1344
+wall=1.63s maxrss=98240KB

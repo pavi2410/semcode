@@ -1,0 +1,217 @@
+{
+  "server": "tsls6",
+  "cmd": "/home/pavitra/.local/share/mise/installs/node/26.11.1/bin/node /home/pavitra/Playground/semcode/spikes/ts-l2/node_modules/typescript-language-server/lib/cli.mjs --stdio",
+  "initialize": {
+    "ms": 74.1,
+    "positionEncoding": "(absent => utf-16)",
+    "caps": [
+      "callHierarchyProvider",
+      "codeActionProvider",
+      "codeLensProvider",
+      "completionProvider",
+      "definitionProvider",
+      "documentFormattingProvider",
+      "documentHighlightProvider",
+      "documentRangeFormattingProvider",
+      "documentSymbolProvider",
+      "executeCommandProvider",
+      "foldingRangeProvider",
+      "hoverProvider",
+      "implementationProvider",
+      "inlayHintProvider",
+      "linkedEditingRangeProvider",
+      "referencesProvider",
+      "renameProvider",
+      "selectionRangeProvider",
+      "semanticTokensProvider",
+      "signatureHelpProvider",
+      "typeDefinitionProvider",
+      "workspaceSymbolProvider"
+    ]
+  },
+  "refs_iface_cold": {
+    "ms": 2699.4,
+    "count": 1048,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        49
+      ]
+    ],
+    "sinceSpawnMs": 2780
+  },
+  "refs_iface_warm": {
+    "ms": 897.3,
+    "count": 1048,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        49
+      ]
+    ]
+  },
+  "mem_after_refs": {
+    "procs": 3,
+    "peakMB": 845,
+    "rssMB": 845
+  },
+  "refs_impl": {
+    "ms": 49.9,
+    "count": 1048,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        49
+      ]
+    ]
+  },
+  "refs_string_fn": {
+    "ms": 201.6,
+    "count": 2408,
+    "files": 89,
+    "probeHits": [
+      [
+        4,
+        20
+      ],
+      [
+        6,
+        35
+      ]
+    ]
+  },
+  "refs_alias_zz": {
+    "ms": 1.9,
+    "count": 4,
+    "files": 1,
+    "probeHits": [
+      [
+        1,
+        14
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        6,
+        32
+      ],
+      [
+        6,
+        48
+      ]
+    ]
+  },
+  "definition_zz_string": {
+    "ms": 1.5,
+    "r": [
+      "v4/classic/schemas.ts:617"
+    ]
+  },
+  "hover_o": {
+    "ms": 2.2,
+    "text": "\n```typescript\nconst o: zz.ZodObject<{\n    a: zz.ZodString;\n    b: zz.ZodNumber;\n}, zz.core.$strip>\n```\n"
+  },
+  "hover_r2": {
+    "ms": 1,
+    "text": "\n```typescript\nconst r2: zz.ZodSafeParseResult<{\n    a: string;\n    b: number;\n}>\n```\n"
+  },
+  "calls_object_fn": {
+    "prepMs": 1.8,
+    "ms": 44.9,
+    "item": "object",
+    "callers": 93,
+    "callSites": 1055,
+    "sample": [
+      "convertBaseSchema",
+      "alias_probe.ts",
+      "apply.test.ts"
+    ]
+  },
+  "calls_core_safeParse_const": {
+    "err": "no item",
+    "ms": 0.7
+  },
+  "calls_util_clone": {
+    "prepMs": 0.6,
+    "ms": 12.8,
+    "item": "clone",
+    "callers": 14,
+    "callSites": 26,
+    "sample": [
+      "withParser",
+      "clone",
+      "clone"
+    ]
+  },
+  "prepareRename": {
+    "ms": 27,
+    "r": {
+      "start": {
+        "line": 71,
+        "character": 2
+      },
+      "end": {
+        "line": 71,
+        "character": 11
+      }
+    }
+  },
+  "rename": {
+    "ms": 26,
+    "edits": 1048,
+    "files": 79
+  },
+  "nonascii": {
+    "enc": "utf-16",
+    "expectedChar": 49,
+    "gotChar": 49,
+    "ok": true,
+    "count": 1048
+  },
+  "after_didChange": {
+    "ms": 1007.6,
+    "count": 1049,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        49
+      ],
+      [
+        8,
+        31
+      ]
+    ],
+    "delta": 1
+  },
+  "after_didChange_hover_r3": {
+    "ms": 8.8,
+    "text": "\n```typescript\nconst r3: zz.ZodSafeParseResult<boolean>\n```\n"
+  },
+  "mem_final": {
+    "procs": 3,
+    "peakMB": 1085,
+    "rssMB": 1085
+  }
+}

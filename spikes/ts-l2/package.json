@@ -1,0 +1,19 @@
+{
+  "name": "ts-l2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+    "ts-classic": "npm:typescript@^6.0.3",
+    "typescript": "^7.0.2",
+    "typescript-language-server": "^6.0.2"
+  }
+}

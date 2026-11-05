@@ -1,0 +1,18 @@
+[package]
+name = "ty-lib-spike"
+version = "0.1.0"
+edition = "2024"
+
+# Pinned to the ruff commit vendored by ty 0.0.87 (astral-sh/ty tag 0.0.87 -> ruff submodule).
+[dependencies]
+ty_ide = { git = "https://github.com/astral-sh/ruff", rev = "1ae6552a9432d759218db172c22a007eddfcb40b" }
+ty_project = { git = "https://github.com/astral-sh/ruff", rev = "1ae6552a9432d759218db172c22a007eddfcb40b" }
+ty_python_semantic = { git = "https://github.com/astral-sh/ruff", rev = "1ae6552a9432d759218db172c22a007eddfcb40b" }
+ty_python_core = { git = "https://github.com/astral-sh/ruff", rev = "1ae6552a9432d759218db172c22a007eddfcb40b" }
+ruff_db = { git = "https://github.com/astral-sh/ruff", rev = "1ae6552a9432d759218db172c22a007eddfcb40b", features = ["os"] }
+ruff_text_size = { git = "https://github.com/astral-sh/ruff", rev = "1ae6552a9432d759218db172c22a007eddfcb40b" }
+ruff_source_file = { git = "https://github.com/astral-sh/ruff", rev = "1ae6552a9432d759218db172c22a007eddfcb40b" }
+anyhow = "1"
+
+[profile.release]
+debug = false

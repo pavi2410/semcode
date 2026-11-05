@@ -1,0 +1,167 @@
+{
+  "server": "tsls6",
+  "cmd": "/home/pavitra/.local/share/mise/installs/node/26.11.1/bin/node /home/pavitra/Playground/semcode/spikes/ts-l2/node_modules/typescript-language-server/lib/cli.mjs --stdio",
+  "initialize": {
+    "ms": 210.1,
+    "positionEncoding": "(absent => utf-16)",
+    "caps": [
+      "callHierarchyProvider",
+      "codeActionProvider",
+      "codeLensProvider",
+      "completionProvider",
+      "definitionProvider",
+      "documentFormattingProvider",
+      "documentHighlightProvider",
+      "documentRangeFormattingProvider",
+      "documentSymbolProvider",
+      "executeCommandProvider",
+      "foldingRangeProvider",
+      "hoverProvider",
+      "implementationProvider",
+      "inlayHintProvider",
+      "linkedEditingRangeProvider",
+      "referencesProvider",
+      "renameProvider",
+      "selectionRangeProvider",
+      "semanticTokensProvider",
+      "signatureHelpProvider",
+      "typeDefinitionProvider",
+      "workspaceSymbolProvider"
+    ]
+  },
+  "refs_iface_cold": {
+    "ms": 2149.6,
+    "count": 1,
+    "files": 1,
+    "probeHits": [],
+    "sinceSpawnMs": 2367
+  },
+  "refs_iface_warm": {
+    "ms": 38.9,
+    "count": 1,
+    "files": 1,
+    "probeHits": []
+  },
+  "mem_after_refs": {
+    "procs": 4,
+    "peakMB": 643,
+    "rssMB": 643
+  },
+  "refs_impl": {
+    "ms": 40.6,
+    "count": 1,
+    "files": 1,
+    "probeHits": []
+  },
+  "refs_string_fn": {
+    "ms": 105,
+    "count": 6,
+    "files": 1,
+    "probeHits": []
+  },
+  "refs_alias_zz": {
+    "ms": 20.8,
+    "count": 4,
+    "files": 1,
+    "probeHits": [
+      [
+        1,
+        14
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        6,
+        32
+      ],
+      [
+        6,
+        48
+      ]
+    ]
+  },
+  "definition_zz_string": {
+    "ms": 11.5,
+    "r": []
+  },
+  "hover_o": {
+    "ms": 15.4,
+    "text": "\n```typescript\nconst o: any\n```\n"
+  },
+  "hover_r2": {
+    "ms": 15.3,
+    "text": "\n```typescript\nconst r2: any\n```\n"
+  },
+  "calls_object_fn": {
+    "prepMs": 3697.3,
+    "ms": 1328.8,
+    "item": "object",
+    "callers": 93,
+    "callSites": 1055,
+    "sample": [
+      "convertBaseSchema",
+      "alias_probe.ts",
+      "apply.test.ts"
+    ]
+  },
+  "calls_core_safeParse": {
+    "err": "no item",
+    "ms": 4.7
+  },
+  "prepareRename": {
+    "ms": 3970.9,
+    "r": {
+      "start": {
+        "line": 71,
+        "character": 2
+      },
+      "end": {
+        "line": 71,
+        "character": 11
+      }
+    }
+  },
+  "rename": {
+    "ms": 43.5,
+    "edits": 1048,
+    "files": 79
+  },
+  "nonascii": {
+    "enc": "utf-16",
+    "expectedChar": 49,
+    "gotChar": 49,
+    "ok": true,
+    "count": 1048
+  },
+  "after_didChange": {
+    "ms": 1213,
+    "count": 1049,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        49
+      ],
+      [
+        8,
+        31
+      ]
+    ],
+    "delta": 1048
+  },
+  "after_didChange_hover_r3": {
+    "ms": 9.7,
+    "text": "\n```typescript\nconst r3: zz.ZodSafeParseResult<boolean>\n```\n"
+  },
+  "mem_final": {
+    "procs": 4,
+    "peakMB": 1281,
+    "rssMB": 1277
+  }
+}

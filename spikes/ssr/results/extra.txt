@@ -1,0 +1,10 @@
+TSX A: 2 rewrites, err=false -> const C = () => <div onClick={() => a === b}>{x === null ? 1 : 2}</div>;
+TSX A: TS-compiled pattern on TSX tree matches 0
+TSX B: 2 rewrites, dropped=0, err=false -> const C = () => <div onClick={() => a === b}>{x === null ? 1 : 2}</div>;
+TSX B: TS-compiled pattern on TSX tree matches 0
+TSX B: TS-compiled import pattern on TSX tree: 0, TSX-compiled: 1
+rewrite ripgrep `match $E { $$$ARMS }`: A 242 files/s, B(no trivia) 261 files/s, B(+trivia pass) 123 files/s  (incl. parse)
+rewrite ripgrep `$X.unwrap()`: A 246 files/s, B(no trivia) 251 files/s, B(+trivia pass) 107 files/s  (incl. parse)
+adversarial f($$$A, $B, $$$C, 99) on 200 args: B 0 matches in 11.516833ms; A 0 in 849.075µs
+adversarial f($$$A, 1, $$$B, 2, $$$C, 99) on 200 args: B 0 matches in 74.554605ms; A 0 in 686.365µs
+adversarial f($$$A, 1, $$$B, 2, $$$C, 99) on 400 args: B 0 matches in 729.007324ms; A 0 in 1.44802ms

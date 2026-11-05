@@ -1,0 +1,16 @@
+[package]
+name = "llama-embed"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+llama-cpp-2 = "0.1.159"
+anyhow = "1"
+regex = "1"
+walkdir = "2"
+
+# Published llama-cpp-sys-2 0.1.159 vendors llama.cpp 26394b4 (2026-09-21), which predates
+# gemma-embedding2 support (ggml-org/llama.cpp#30054, 2026-10-06). Patch in upstream source.
+[patch.crates-io]
+llama-cpp-sys-2 = { path = "../vendor/llama-cpp-sys-2" }
+llama-cpp-2 = { path = "../vendor/llama-cpp-2" }

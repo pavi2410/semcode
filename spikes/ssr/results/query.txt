@@ -1,0 +1,2 @@
+semantic match: File::open("x").unwrap()
+query: 5 syntactic unwrap() matches, 1 after custom #sem-type? predicate

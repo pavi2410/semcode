@@ -1,0 +1,12 @@
+**/target/
+**/node_modules/
+**/.venv/
+**/__pycache__/
+corpus/
+spikes/embed/models/
+spikes/embed/vendor/
+spikes/embed/out/*.f32
+*.onnx
+*.onnx_data
+*.gguf
+*.safetensors

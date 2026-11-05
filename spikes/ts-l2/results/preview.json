@@ -1,0 +1,227 @@
+{
+  "server": "preview",
+  "cmd": "/home/pavitra/Playground/semcode/spikes/ts-l2/node_modules/@typescript/native-preview-linux-x64/lib/tsgo --lsp --stdio",
+  "initialize": {
+    "ms": 2.3,
+    "positionEncoding": "utf-8",
+    "serverInfo": {
+      "name": "typescript-go",
+      "version": "7.0.0-dev.20260707.2"
+    },
+    "caps": [
+      "_vs_onAutoInsertProvider",
+      "_vs_referencesProvider",
+      "callHierarchyProvider",
+      "codeActionProvider",
+      "codeLensProvider",
+      "completionProvider",
+      "definitionProvider",
+      "diagnosticProvider",
+      "documentFormattingProvider",
+      "documentHighlightProvider",
+      "documentOnTypeFormattingProvider",
+      "documentRangeFormattingProvider",
+      "documentSymbolProvider",
+      "foldingRangeProvider",
+      "hoverProvider",
+      "implementationProvider",
+      "inlayHintProvider",
+      "linkedEditingRangeProvider",
+      "referencesProvider",
+      "renameProvider",
+      "selectionRangeProvider",
+      "semanticTokensProvider",
+      "signatureHelpProvider",
+      "typeDefinitionProvider",
+      "workspaceSymbolProvider"
+    ]
+  },
+  "refs_iface_cold": {
+    "ms": 582,
+    "count": 1048,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        61
+      ]
+    ],
+    "sinceSpawnMs": 586
+  },
+  "refs_iface_warm": {
+    "ms": 19.3,
+    "count": 1048,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        61
+      ]
+    ]
+  },
+  "mem_after_refs": {
+    "procs": 1,
+    "peakMB": 333,
+    "rssMB": 333
+  },
+  "refs_impl": {
+    "ms": 20.5,
+    "count": 1048,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        61
+      ]
+    ]
+  },
+  "refs_string_fn": {
+    "ms": 75.3,
+    "count": 2408,
+    "files": 89,
+    "probeHits": [
+      [
+        4,
+        20
+      ],
+      [
+        6,
+        35
+      ]
+    ]
+  },
+  "refs_alias_zz": {
+    "ms": 2.2,
+    "count": 4,
+    "files": 1,
+    "probeHits": [
+      [
+        1,
+        14
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        6,
+        32
+      ],
+      [
+        6,
+        48
+      ]
+    ]
+  },
+  "definition_zz_string": {
+    "ms": 0.5,
+    "r": [
+      "v4/classic/schemas.ts:617"
+    ]
+  },
+  "hover_o": {
+    "ms": 11,
+    "text": "const o: zz.ZodObject<{\n    a: zz.ZodString;\n    b: zz.ZodNumber;\n}, zz.core.$strip>"
+  },
+  "hover_r2": {
+    "ms": 1.6,
+    "text": "const r2: zz.ZodSafeParseResult<{\n    a: string;\n    b: number;\n}>"
+  },
+  "calls_object_fn": {
+    "prepMs": 1.3,
+    "ms": 29.1,
+    "item": "object",
+    "callers": 93,
+    "callSites": 1055,
+    "sample": [
+      "/tmp/zodspike/packages/zod/src/alias_probe.ts",
+      "convertBaseSchema",
+      "/tmp/zodspike/packages/zod/src/v4/classic/tests/apply.test.ts"
+    ]
+  },
+  "calls_core_safeParse_const": {
+    "err": "no item",
+    "ms": 0.4
+  },
+  "calls_util_clone": {
+    "prepMs": 0.4,
+    "ms": 23.2,
+    "item": "clone",
+    "callers": 14,
+    "callSites": 26,
+    "sample": [
+      "withChecks",
+      "clone",
+      "withParser"
+    ]
+  },
+  "prepareRename": {
+    "ms": 0.3,
+    "r": {
+      "range": {
+        "start": {
+          "line": 71,
+          "character": 2
+        },
+        "end": {
+          "line": 71,
+          "character": 11
+        }
+      },
+      "placeholder": "safeParse"
+    }
+  },
+  "rename": {
+    "ms": 13,
+    "edits": 1048,
+    "files": 79
+  },
+  "nonascii": {
+    "enc": "utf-8",
+    "expectedChar": 61,
+    "gotChar": 61,
+    "ok": true,
+    "count": 1047
+  },
+  "after_didChange": {
+    "ms": 358,
+    "count": 1049,
+    "files": 79,
+    "probeHits": [
+      [
+        5,
+        19
+      ],
+      [
+        7,
+        61
+      ],
+      [
+        8,
+        31
+      ]
+    ],
+    "delta": 1
+  },
+  "after_didChange_hover_r3": {
+    "ms": 0.3,
+    "text": "const r3: zz.ZodSafeParseResult<boolean>"
+  },
+  "mem_final": {
+    "procs": 1,
+    "peakMB": 468,
+    "rssMB": 468
+  }
+}

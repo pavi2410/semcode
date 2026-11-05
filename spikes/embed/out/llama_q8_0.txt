@@ -1,0 +1,1 @@
+load models/gguf2/embeddinggemma-2-Q8_0.gguf: 0.61s, RSS 452 MB, n_embd_out 768

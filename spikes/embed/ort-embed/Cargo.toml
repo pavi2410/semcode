@@ -1,0 +1,15 @@
+[package]
+name = "ort-embed"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ort = { version = "=2.0.0-rc.14", default-features = false, features = ["std", "ndarray", "download-binaries", "copy-dylibs", "tls-native"] }
+tokenizers = { version = "0.23", default-features = false, features = ["onig"] }
+ndarray = "0.17"
+anyhow = "1"
+regex = "1"
+walkdir = "2"
+
+[profile.release]
+debug = false

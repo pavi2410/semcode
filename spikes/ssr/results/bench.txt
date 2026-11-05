@@ -1,0 +1,6 @@
+A ast-grep  rust/ripgrep  files=110  1.9MB  parse=  380.0ms  match(2 pats)=  165.2ms  =>    202 files/s total,    666 files/s match-only; hits=[1047, 356]
+B own       rust/ripgrep  files=110  1.9MB  parse=  417.0ms  match(2 pats)=  146.1ms  =>    195 files/s total,    753 files/s match-only; hits=[1047, 356]
+A ast-grep  python/httpx  files=60   0.6MB  parse=  197.7ms  match(2 pats)=   61.1ms  =>    232 files/s total,    982 files/s match-only; hits=[6, 4]
+B own       python/httpx  files=60   0.6MB  parse=  272.0ms  match(2 pats)=   81.3ms  =>    170 files/s total,    738 files/s match-only; hits=[6, 4]
+A ast-grep  ts/zod        files=515  3.6MB  parse= 1483.1ms  match(2 pats)=  524.3ms  =>    257 files/s total,    982 files/s match-only; hits=[3, 0]
+B own       ts/zod        files=515  3.6MB  parse= 1522.0ms  match(2 pats)=  449.7ms  =>    261 files/s total,   1145 files/s match-only; hits=[3, 588]
